@@ -1,6 +1,7 @@
 //WorkingWithIntegers();
 //OrderPrecedence();
 //IntegersAndRemainders();
+//WorkingWithDoubles();
 
 void WorkingWithIntegers()
 {
@@ -62,6 +63,8 @@ int what = max + 3;
 Console.WriteLine($"An example of overflow: {what}");
 }
 
+void WorkingWithDoubles()
+{
 double a = 5;
 double b = 4;
 double c = 2;
@@ -83,3 +86,21 @@ Console.WriteLine(third);
 
 double i = d*h;
 Console.WriteLine(i);
+}
+
+decimal min = decimal.MinValue;
+decimal max = decimal.MaxValue;
+Console.WriteLine($"The range of the decimal type is {min} to {max}");
+
+double a = 1.0;
+double b = 3.0;
+Console.WriteLine(a / b);
+
+decimal c = 1.0M;
+decimal d = 3.0M;
+Console.WriteLine(c / d);
+
+double e = 2.5;
+double f = Math.PI;
+double g = e*e*f;
+Console.WriteLine(g);
